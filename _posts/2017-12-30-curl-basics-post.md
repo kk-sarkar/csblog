@@ -3,6 +3,11 @@ layout: post
 title: cURL, A Brief Overview
 excerpt: "A succinct overview of curl command line tool for developers."
 categories: [curl, tutorial, command line, networking]
+tags:
+      - curl
+      - tutorial
+      - command line
+      - networking
 comments: true
 image:
   feature: /posts/curl/1.png
