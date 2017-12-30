@@ -1,0 +1,54 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: csblog
+email: talk.to.kalyan@hotmail.com
+description: A simple blog on Computer Science and Software Engineering, powered by Jekyll.
+url: https://kk-sarkar.github.io/csblog/ # the base hostname & protocol for your site
+keywords: ["Programming", "Computer Science", "Software Engineering"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Indian Standard Time
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: csblog
+  avatar: logo.png
+  desc: "Everything CS and SE"
+  detailDesc: "A blog dedicated to various areas of Computer Science and Software Engineering."
+  email: talk.to.kalyan@hotmail.com
+  disqus-shortname: #renyuanzblog
+  google:
+    plus:
+    analytics: #UA-62251910-2
+    verify:
+    ad-client:
+    ad-slot:
+  github1: kalyan-sarkar
+  github2: kk-sarkar
+  stackoverflow: 1163607/nincompoop
+  linkedin: kalyankumarsarkar
+  gitlab: MetricSpaces
+  freecodecamp: kalyan-sarkar
+  codepen: kalyansarkar
