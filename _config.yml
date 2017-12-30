@@ -4,7 +4,7 @@
 ####################################
 #
 title: csblog
-email: talk.to.kalyan@hotmail.com
+email: kalyansarkar.me@domainsbyproxy.com
 description: A simple blog on Computer Science and Software Engineering, powered by Jekyll.
 url: https://kk-sarkar.github.io/csblog/ # the base hostname & protocol for your site
 keywords: ["Programming", "Computer Science", "Software Engineering"]
@@ -37,7 +37,7 @@ owner:
   avatar: logo.png
   desc: "Everything CS and SE"
   detailDesc: "A blog dedicated to various areas of Computer Science and Software Engineering."
-  email: talk.to.kalyan@hotmail.com
+  email: kalyansarkar.me@domainsbyproxy.com
   disqus-shortname: #renyuanzblog
   google:
     plus:
