@@ -2,13 +2,13 @@
 layout: post
 title: Character Encodings
 excerpt: "Discussion on Character Encodings."
-categories: [digital logic, character encodings, unicode, ascii, tutorial, binary]
+categories: [digital logic, tutorial, character encodings, unicode, ascii, binary]
 tags:
       - digital logic
+      - tutorial
       - character encodings
       - unicode
       - ascii
-      - tutorial
       - binary
 comments: true
 image:
