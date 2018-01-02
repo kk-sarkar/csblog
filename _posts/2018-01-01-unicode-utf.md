@@ -64,6 +64,10 @@ Since UTF-16 uses at least 2 bytes to express a character code point, the endian
 | Little endian(Binary)  | 01000001  | 00000000 |
 |----
 
+If the binary representation of the code point exceeds 16 bits, then it cannot be stored within 2-bytes in the UTF-16 system. We need to store them in 4 bytes in a particular pattern of two 2-byte numbers. The first 2-bytes are called the **High Surrogate** and the next 2-bytes are called the **Low Surrogate**. The format must strictly follow this pattern where the High Surrogates will be followed by the Low Surrogates. Each Surrogate consists of 2-bytes and the endianness of the machine determines how the two bytes within each Surrogate is ordered but endianness of the machine doesn't determine the order of the Surrogates themselves. It is always High Surrogate followed by the Low Surrogate.
+
+We take the code point *X*, *Subtract hexadecimal number 10000* from it to get some code point *Y*. *Y* will always be a *20-bit number*. We split the *20-bit Y* into *two 10-bit numbers A* and *B*. We add *D800* to *A* to get the High Surrogate *A'* and then we add *DC00* to *B* to get the Low Surrogate *B'*. The number is thus stored as *A' B'*.
+
 #### UTF-32
 
 **UTF-32** uses 4 bytes for all characters. The problems with UTF-32 is same as that of UTF-16, mainly, incompatibility with existing ASCII formatted text files and also this encoding takes 4 times as much space as a plain ASCII encoding scheme because each byte in ASCII is converted to equivalent 4-byte code points in UTF-32. Most computers today are based on a 32 bit or 64-bit architecture, so this allows computers to manipulate Unicode values as a whole computer **"word"** of 32 bits on 32-bit architectures, or as a half computer "word" of 32 bits on 64-bit architectures. Hence, UTF-32 allows for fast computation on 32 bit and 64-bit computers.
